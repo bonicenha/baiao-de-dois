@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* * { border: 1px solid red !important; } */
+
+html {
+    min-height: 100%;
+    overflow-y: scroll;
+}    
+
+.noselect{user-select: none;}
+
+.center{display: flex; justify-content: center;}
+
+body {
+    background-color: #cabadd;
+    background-image: url("src/bg.png");
+    background-position: center bottom;
+    background-size: 600px;
+    background-repeat: repeat-x;
+    height: 100%;
+}
+
+.bg2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.title{
+    font-family: "Meow Script";
+    color: #D88BCF;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.tempo-namoro-div{
+    box-sizing: content-box;
+    background-color: #b7b4e9;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 400px;
+    border: 3px solid #D88BCF;
+    gap: 15px;
+}
+
+.tempo-namoro {
+    font-family: Cambria;
+    color: rgb(14, 14, 14);
+    font-size   : 1.3rem;
+    text-align: center;
+}
+
+.container-slider{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+}
+
+.slider{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity .2s;
+    border: 3px solid #D88BCF;
+}
+
+.on{
+    opacity: 1;
+}
+
+#prev, #next {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+#prev img, #next img{
+    height: 100%;
+    width: 100%;
+}
+
+#prev{
+    transform: rotate(180deg);
+}
+
+.mylove{
+    margin: 2rem 0;
+    display: flex;
+    justify-self: center;
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    align-items: center;
+    background-image: url(src/bg3.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 150px;
+}
+
+.music{
+    width: 500px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.text{
+    padding: 3rem 2rem;
+    font-family: Cambria;
+    font-size: 1.2rem;
+}
+
+.roxo{
+    color: #D88BCF;
+}
