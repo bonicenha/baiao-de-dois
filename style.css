@@ -37,6 +37,7 @@ body {
     color: #D88BCF;
     text-align: center;
     margin-top: 1rem;
+    font-size: 3rem;
 }
 
 .tempo-namoro-div{
@@ -48,7 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    width: 400px;
+    width: 45%;
     border: 3px solid #D88BCF;
     gap: 15px;
     margin: 5rem 0;
@@ -63,7 +64,7 @@ body {
 
 .container-slider{
     display: flex;
-    max-width: 100%;
+    width: 60%;
     height: 800px;
     align-items: center;
     justify-content: center;
@@ -75,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 100%;
 }
 
 .slider{
@@ -164,4 +165,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
