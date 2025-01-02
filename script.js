@@ -2,21 +2,18 @@ function calcularDiferencaData(dataInicial) {
     const hoje = new Date();
     const dataInicio = new Date(dataInicial);
   
-    // Calcular a diferença em milissegundos
     const diferencaTempo = hoje - dataInicio;
   
-    // Converter a diferença para dias
-    const umDia = 24 * 60 * 60 * 1000; // Milissegundos em um dia
+    const umDia = 24 * 60 * 60 * 1000; 
     const diasTotais = Math.floor(diferencaTempo / umDia);
   
-    // Calcular a diferença em anos, meses e dias
     let anos = hoje.getFullYear() - dataInicio.getFullYear();
     let meses = hoje.getMonth() - dataInicio.getMonth();
     let dias = hoje.getDate() - dataInicio.getDate();
   
     if (dias < 0) {
       meses -= 1;
-      dias += new Date(hoje.getFullYear(), hoje.getMonth(), 0).getDate(); // Dias no mês anterior
+      dias += new Date(hoje.getFullYear(), hoje.getMonth(), 0).getDate();
     }
   
     if (meses < 0) {
@@ -32,7 +29,6 @@ function calcularDiferencaData(dataInicial) {
     };
   }
 
-// Exemplo de uso
 const data = "2023-12-19";
 const diferenca = calcularDiferencaData(data);
 
@@ -51,7 +47,7 @@ if(diferenca.meses == 1){
 }
 
 if(diferenca.dias == 1){
-  divNamoro.innerHTML += `e ${diferenca.dias} diajuntinhos.`
+  divNamoro.innerHTML += `e ${diferenca.dias} dia juntinhos.`
 } else {
   divNamoro.innerHTML += `e ${diferenca.dias} dias juntinhos.`
 }

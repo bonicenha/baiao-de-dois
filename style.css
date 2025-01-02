@@ -59,8 +59,8 @@ body {
 
 .container-slider{
     display: flex;
-    width: 100%;
-    height: 500px;
+    max-width: 100%;
+    height: 900px;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -71,7 +71,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 600px;
 }
 
 .slider{
@@ -94,23 +94,37 @@ body {
     background-color: transparent;
     cursor: pointer;
     user-select: none;
+    transition: .2s;
 }
 
-#prev img, #next img{
-    height: 100%;
-    width: 100%;
+#prev:hover{
+    transform: rotate(180deg) scale(1.3);
 }
 
 #prev{
     transform: rotate(180deg);
 }
 
+#next:hover{
+    transform: scale(1.3);
+}
+
+
+
+#prev img, #next img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
 .mylove{
-    margin: 2rem 0;
+    margin: 3rem 0 5rem 0;
     display: flex;
+    flex-direction: column-reverse;
     justify-self: center;
     background-color: white;
-    width: 600px;
+    width: 550px;
     border-radius: 10px;
     align-items: center;
     background-image: url(src/bg3.png);
@@ -120,9 +134,8 @@ body {
 }
 
 .music{
-    width: 500px;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 450px;
+    margin: 8px;
 }
 
 .text{
@@ -133,4 +146,18 @@ body {
 
 .roxo{
     color: #D88BCF;
+}
+
+/* desktop */
+@media only screen and (min-width: 1200px) {
+    .mylove{
+        flex-direction: row;
+        width: 700px;
+    }
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
