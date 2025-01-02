@@ -42,7 +42,7 @@ body {
 
 .tempo-namoro-div{
     box-sizing: content-box;
-    background-color: #b7b4e9;
+    background-color: #d0eaf4d0;
     padding: 2rem 0rem;
     display: flex;
     flex-direction: column;
@@ -69,6 +69,14 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+.clouds{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(src/bgc.png);
+    background-position: center;
+
 }
 
 .container-images{
