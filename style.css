@@ -167,6 +167,20 @@ body {
         flex-direction: row;
         width: 700px;
     }
+
+    .container-slider{
+        width: 37%;
+        height: 700px;
+    }
+
+    .divider{
+        width: 30%;
+    }
+
+    .tempo-namoro-div{
+        width: 26%;
+        padding: 1rem;
+    }
 }
 
 .wrapper{
