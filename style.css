@@ -181,6 +181,10 @@ body {
         width: 26%;
         padding: 1rem;
     }
+
+    .text{
+        margin: 0;
+    }
 }
 
 .wrapper{
