@@ -98,6 +98,8 @@ function prevSlider() {
   showSlider()
 }
 
+setInterval(nextSlider, 5000);
+
 
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
