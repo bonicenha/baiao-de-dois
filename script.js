@@ -64,6 +64,13 @@ const diasTotaisdiv = document.querySelector('.dias-totais').innerHTML = diferen
 
 
 // carroussel
+let interval
+
+function startSliderInterval() {
+  clearInterval(interval);
+  interval = setInterval(nextSlider, 6000);
+}
+
 const slider = document.querySelectorAll('.slider')
 const btnPrev = document.getElementById('prev')
 const btnNext = document.getElementById('next')
@@ -86,6 +93,7 @@ function nextSlider() {
     currentSlide++
   }
   showSlider()
+  startSliderInterval();
 }
 
 function prevSlider() {
@@ -96,9 +104,10 @@ function prevSlider() {
     currentSlide--
   }
   showSlider()
+  startSliderInterval()
 }
 
-setInterval(nextSlider, 5000);
+startSliderInterval()
 
 
 btnNext.addEventListener('click', nextSlider)
