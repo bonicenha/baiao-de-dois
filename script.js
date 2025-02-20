@@ -1,5 +1,7 @@
+const hoje = new Date(new Date().toISOString().split("T")[0]);
+
 function calcularDiferencaData(dataInicial) {
-    const hoje = new Date(new Date().toISOString().split("T")[0]);
+
     const dataInicio = new Date(dataInicial);
   
     const diferencaTempo = hoje - dataInicio;
@@ -112,3 +114,17 @@ startSliderInterval()
 
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
+
+//aniversario
+let diaHoje = hoje.getDate() +1;
+let mesHoje = hoje.getMonth() +1;
+const ElementoAniversario = document.getElementById("aniversario-namoro")
+const ElementConfete = document.getElementById("confetes")
+
+if(mesHoje === 12 && diaHoje === 19){
+  ElementoAniversario.innerHTML = `&#129395; Hoje é nosso <span class="roxo">aniversário</span> de namoro, parabéns pra gente &#129395;`
+  ElementConfete.style.display = "block"
+} else if(diaHoje === 19){
+  ElementoAniversario.innerHTML = `&#129395; Hoje é nosso <span class="roxo">mêsversário</span> uhuul &#129395;`
+  ElementConfete.style.display = "block"
+}
