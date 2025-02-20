@@ -123,8 +123,8 @@ const ElementConfete = document.getElementById("confetes")
 
 if(mesHoje === 12 && diaHoje === 19){
   ElementoAniversario.innerHTML = `&#129395; Hoje é nosso <span class="roxo">aniversário</span> de namoro, parabéns pra gente &#129395;`
-  ElementConfete.style.display = "block"
+  ElementConfete.style.opacity = "1"
 } else if(diaHoje === 19){
   ElementoAniversario.innerHTML = `&#129395; Hoje é nosso <span class="roxo">mêsversário</span> uhuul &#129395;`
-  ElementConfete.style.display = "block"
+  ElementConfete.style.opacity = "1"
 }

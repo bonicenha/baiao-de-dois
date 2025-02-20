@@ -195,7 +195,7 @@ body {
 }
 
 #confetes{
-    display: none;
+    opacity: 0;
 }
 
 #confete1, #confete2{
